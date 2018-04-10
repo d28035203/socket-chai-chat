@@ -1,8 +1,8 @@
 # Socket Chai Chat
 
-Minimal **TCP chat** for Computer Networks lab vibes — **networks lab practice**.
+Minimal **TCP chat** for learning sockets and concurrent clients.
 
-One server. Many clients. Zero encryption. Maximum nostalgia. Best with chai from the canteen queue.
+One server. Many clients. Zero encryption. Best with tea.
 
 ```bash
 # terminal 1
