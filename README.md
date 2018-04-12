@@ -1,17 +1,14 @@
-# Socket Chai Chat
+# Packet Chai
 
-Minimal **TCP chat** for learning sockets and concurrent clients.
+**Subject vibe:** Computer Networks — TCP sockets.
 
-One server. Many clients. Zero encryption. Best with tea.
+Multi-client TCP chat: one server broadcasts lines to everyone else.
 
 ```bash
-# terminal 1
-python3 server.py
-
-# terminal 2+
-python3 client.py
+python3 server.py   # terminal 1
+python3 client.py   # terminal 2+
 ```
 
-Default port: `5050`.
+Port `5050`. No encryption — lab toy, not a product.
 
-MIT · 2018
+MIT · practice project

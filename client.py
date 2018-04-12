@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""socket-chai-chat client."""
+"""packet-chai client."""
 
 from __future__ import print_function
 import socket

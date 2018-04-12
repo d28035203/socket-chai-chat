@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""socket-chai-chat server — broadcast TCP chat (CN lab 2018)."""
+"""packet-chai server — broadcast TCP chat (CN lab 2018)."""
 
 from __future__ import print_function
 import socket
@@ -29,7 +29,7 @@ def broadcast(msg, skip=None):
 def handle(conn, addr):
  print("joined:", addr)
  try:
- conn.sendall(b"welcome to socket-chai-chat. type something.\n")
+ conn.sendall(b"welcome to packet-chai. type something.\n")
  while True:
  data = conn.recv(1024)
  if not data:
@@ -51,7 +51,7 @@ def main():
  s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
  s.bind((HOST, PORT))
  s.listen(5)
- print("chai chat listening on %d" % PORT)
+ print("packet chai listening on %d" % PORT)
  try:
  while True:
  conn, addr = s.accept()
