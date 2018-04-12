@@ -1,6 +1,6 @@
 # Packet Chai
 
-**Subject vibe:** Computer Networks — TCP sockets.
+**** Computer Networks — TCP sockets.
 
 Multi-client TCP chat: one server broadcasts lines to everyone else.
 

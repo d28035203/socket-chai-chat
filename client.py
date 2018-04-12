@@ -9,7 +9,6 @@ import sys
 HOST = "127.0.0.1"
 PORT = 5050
 
-
 def recv_loop(sock):
  while True:
  data = sock.recv(1024)
@@ -20,13 +19,11 @@ def recv_loop(sock):
  sys.stdout.write(data.decode("utf-8", "replace"))
  sys.stdout.flush()
 
-
 def os_exit():
  try:
  sys.exit(0)
  except SystemExit:
  pass
-
 
 def main():
  sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -42,7 +39,6 @@ def main():
  pass
  finally:
  sock.close()
-
 
 if __name__ == "__main__":
  main()

@@ -11,7 +11,6 @@ PORT = 5050
 clients = []
 lock = threading.Lock()
 
-
 def broadcast(msg, skip=None):
  with lock:
  dead = []
@@ -24,7 +23,6 @@ def broadcast(msg, skip=None):
  dead.append(c)
  for c in dead:
  clients.remove(c)
-
 
 def handle(conn, addr):
  print("joined:", addr)
@@ -45,7 +43,6 @@ def handle(conn, addr):
  conn.close()
  print("left:", addr)
 
-
 def main():
  s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
  s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -62,7 +59,6 @@ def main():
  print("\nserver stopping")
  finally:
  s.close()
-
 
 if __name__ == "__main__":
  main()
